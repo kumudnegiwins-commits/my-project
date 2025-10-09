@@ -37,11 +37,11 @@ const NextArrow = ({ onClick }) => (
 const PrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="hidden md:block absolute -top-25 right-18 z-20 bg-gray-100 hover:bg-gray-300 p-2 rounded-full shadow h-[46px] w-[46px] flex items-center justify-center"
+    className="hidden md:block absolute -top-25 right-18 z-20 bg-gray-100  hover:bg-gray-300 p-2 rounded-full shadow h-[46px] w-[46px] flex items-center justify-center"
   >
     <FaArrowLeft />
   </button>
-);
+); 
 
 const AllProductsSection = () => {
   const settings = {

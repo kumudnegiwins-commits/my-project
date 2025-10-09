@@ -7,21 +7,24 @@ import "slick-carousel/slick/slick-theme.css";
 import ProductCarousel from "./components/ProductCarousel";
 import AllProductsSection from './components/AllProductsSection';
 import BestSellingSection from './components/BestSelling';
-import ImageCarouselSection from './components/ImageCarouselSection';
 import NotFound from './components/NotFound';
 import ProductPage from './components/ProductPage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import FirstPage from './pages/First';
 
 function App() {
   return (
-    <div className="bg-white min-h-screen">
-      <ProductCarousel />
-      <AllProductsSection/>
-      <BestSellingSection/>
-      <ImageCarouselSection/>
-      <NotFound/>
-      <ProductPage/>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/NotFound' element={<NotFound/>}></Route>
+      <Route path='/AllProductsSection' element={<AllProductsSection/>}></Route>
+      <Route path='/BestSelling' element={<BestSellingSection/>}></Route>
+      <Route path='/ProductDetails' element={<ProductPage/>}></Route>
+      <Route path='/' element={<FirstPage/>}></Route>
 
-    </div>
+    </Routes>
+      </BrowserRouter>
+      
   );
 }
 

@@ -34,7 +34,7 @@ const ProductDetailsSection = ({
 
   return (
     <>
-     <div className="pt-[80px] ps-[135px] space-x-[30px]"><span className="text-gray-400">Home /</span> 404 Error</div>
+     <div className="pt-[80px] ps-[135px] space-x-[30px] pb-[80px ]"><span className="text-gray-400">Account / Gaming /</span> Havic HV G-92 Gamepad</div>
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row">
         {/* Left - Thumbnails */}
         <div className="w-[170px] mr-[30px] h-[600px]">
